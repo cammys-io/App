@@ -15,7 +15,6 @@ export class Home {
   constructor() {
     this._stroeService.getProducts().subscribe({
       next: (data) => {
-        console.log(data);
         this.products = data;
       },
       error: (error) => console.log(error),

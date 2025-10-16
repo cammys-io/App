@@ -1,18 +1,7 @@
-<div class="container-fluid">
-  <div class="row">
-    @for (user of users; track user.id) {
-    <div class="col-12 col-sm-6 col-md-3 col-lg-2 mt-3 position-relative">
-        <div class="card shadow rounded-4">
-            <div class="card-body">
-                <h4 class="card-title">{{ user.id }}</h4>
-                <h4 class="card-title">{{ user.username }}</h4>
-                <h4 class="card-title">{{ user.email }}</h4>
-                <h4 class="card-title">{{ user.password }}</h4>
-                
-            </div>
-        </div>
-      
-    </div>
-    }
-  </div>
-</div>
+@for(user of users;track user.id){
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">Edad: {{ user.id }}</li>
+  <li class="list-group-item">Correo: {{ user.username }}</li>
+  <li class="list-group-item">Telefono: {{ user.email }}</li>
+  <li class="list-group-item">Nacionalidad: {{ user.password }}</li>  
+</ul>}
