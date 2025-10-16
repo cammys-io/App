@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="row">
+    @for (product of products; track product.id) {
+    <div class="col-12 col-sm-6 col-md-3 col-lg-2 mt-3 position-relative">
+      @if (product.rating && product.rating.rate > 3) {
+      <span class="best-product-badge">⭐ Best Product</span>
+      }
+      <app-card-product [product]="product"></app-card-product>
+    </div>
+    }
+  </div>
+</div>

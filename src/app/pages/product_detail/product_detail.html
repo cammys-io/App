@@ -1,0 +1,19 @@
+<div class="producto-container">
+  <div class="producto-info">
+    <h5>Descripción del artículo:</h5>
+    <p>{{ producto.description }}</p>
+
+    <h5>Precio del producto:</h5>
+    <p>${{ producto.price }}</p>
+
+    <p><strong>Categoría:</strong> {{ producto.category }}</p>
+
+    <div class="botones">
+      <button class="btn-agregar">Agregar producto</button>
+    </div>
+  </div>
+
+  <div class="producto-imagen">
+    <img [src]="producto.image" alt="{{ producto.title }}" />
+  </div>
+</div>

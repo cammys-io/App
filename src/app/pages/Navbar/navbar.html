@@ -1,0 +1,28 @@
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MyFirstApp</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        @for (item of menuList; track $index) {
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="item.url" routerLinkActive="active" aria-current="page">
+            {{ item.name }}
+          </a>
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
+</nav>
