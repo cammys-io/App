@@ -4,6 +4,7 @@ import { Home } from './pages/home/home';
 import { NavbarComponent } from './pages/Navbar/navbar';
 import { ProductDetail } from './pages/product_detail/product_detail';
 import { Favoritos } from './pages/favoritos/favoritos';
+import { Usuarios } from './pages/usuarios/usuarios';
 
 export const routes: Routes = [
   {
@@ -26,10 +27,15 @@ export const routes: Routes = [
     path: 'favoritos',
     component: Favoritos,
   },
+  {
+    path:'usuarios',
+    component:Usuarios
+  },
 
   {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  
 ];

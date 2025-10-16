@@ -18,5 +18,6 @@ export class NavbarComponent {
     { name: 'Home', url: '/home' },
     { name: 'Acerca de', url: '/acercade' },
     { name: 'Favoritos', url: '/favoritos' },
+    { name:'Usuarios', url:'/usuarios'},
   ];
 }

@@ -8,7 +8,7 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-card-product',
   standalone: true,
-  imports: [NgIf, CurrencyPipe],
+  imports: [CurrencyPipe],
   template: `
     <div class="card shadow rounded-4">
       <img

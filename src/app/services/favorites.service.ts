@@ -14,9 +14,9 @@ export class FavoritesService {
   }
 
   saveInFavorites(producto: ProductFake) {
-    //obeteer los favoritos actuales
+  
     let localFavorites: ProductFake[] = JSON.parse(localStorage.getItem('favorites') || '[]');
-    //ver si el producto ya esta en favoritos
+    
     const encontrado = localFavorites.find((p) => p.id === producto.id);
     console.log(encontrado);
     if (encontrado) {
